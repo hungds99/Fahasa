@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* img { 
+    max-width:100%; 
+    height:auto; 
+}  */
+
 .container-1 {
     max-width: 1240px;
     padding: 0;
@@ -22,6 +27,15 @@ li a {
 li a:hover {
     text-decoration: none;
     color: black;
+}
+
+a {
+    color: black !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: black !important;
 }
 
 input:focus {
@@ -162,7 +176,7 @@ body {
     }
 
     #verticalmenu {
-        background: #F7941E;
+        /* background: #F7941E; */
     }
 
     #verticalmenu .block-title {
@@ -174,6 +188,7 @@ body {
         min-height: 42px;
         line-height: 40px;
         text-align: center;
+        background: #F7941E;
     }
 
     #verticalmenu .block-title span {
@@ -183,6 +198,283 @@ body {
         font-size: 16px;
         position: relative;
     }
+
+    .block-content {
+        position: relative;
+        width: 100%;
+    }
+
+    .block-content ul {
+        position: relative;
+    }
+
+    .block-content ul li {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        font-size: 14px;
+        position: relative;
+    }
+
+    .block-content ul li .dropmenu {
+        position: absolute;
+        width: 940px;
+        background-color: #fff;
+        top: 0;
+        right: -935px;
+        z-index: 10;
+        padding: 10px;
+    }
+
+    .block-content ul li a > b {
+        border: 0;
+        position: absolute;
+        right: 20px;
+        top: 30%;
+    }
+
+    .block-content ul li:hover {
+        cursor: pointer;
+        background-color: whitesmoke;
+    }
+/* 
+    .block-content ul li:hover > .dropmenu {
+        display: none;
+    } */
+
+/* ======================= [MAIN-CONTAINER] ======================= */
+.main-container {
+    background-color: #F0F0F0;
+}
+    .fhs-banner-image-block img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    /* * Cms-Icon-Menu * */
+    .cms-icon-menu {
+        margin: 10px 0px 10px 0px;
+        background-color: #fff;
+        padding: 15px;
+        text-align: center;
+     }
+
+    /* * Product Suggestion * */
+    .products-suggestion {
+        background-color: #fff;
+        padding-top: 15px;
+        height: auto;
+    }
+
+    .categories-suggestion {
+        /* text-align: center; */
+    }
+
+    .categories-suggestion > .nav-links {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+    }
     
+    .categories-suggestion > .nav-links li {
+        padding: 2px 17px;
+        font-size: 15px;
+    }
+
+    .categories-suggestion > .nav-links li:hover {
+        border-bottom: 1px solid #F7941E;
+        cursor: pointer;
+        box-sizing: none;
+    }
+
+    .product-suggestion-contents {
+        padding-left: 10px;
+    }
+
+    .product-suggestion-contents p {
+        margin: 0;
+    }
+
+    .product-box {
+        position: relative;
+    }
+
+    .label-pro-sale {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 10;
+        top: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color: transparent;
+        border-radius: 50%;
+        background-color:#F7941E;
+    }
+
+    .p-sale-label {
+        margin-top: 19%;
+        font-size: 16px;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+
+    .product-name {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .product-name a {
+        color: #333333;
+        display: block;
+        height: inherit;
+    }
+
+    .special-price {
+        zoom: 1;
+        background-color: #F7931E !important;
+        color: #fff;
+        width: 30%;
+    }
+
+    .special-price .price {
+        font-size: 14px;
+        min-height: 25px;
+        padding: 3px;
+    }
+
+    .old-price .price {
+        color: #888888;
+        text-decoration: line-through;
+        font-size: 13px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* * Flash Sale * */
+    .flash-sale {
+        background-color: #fff;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .flash-sale p {
+        margin: 0;
+    }
+
+    .flash-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid red;
+    }
+
+    .flash-title p {
+        margin: 0;
+    }
+
+    .flash-title {
+        color: #fff;
+        border-bottom: 30px solid red;
+        border-left: 15px solid red;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 120px;
+    }
+
+    .flash-time {
+        display: flex;
+        justify-content: space-around;
+        background-color: red;
+    }
+
+    .flash-time p {
+        color: #fff;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* * Features Product * */
+    .feature {
+        background-color: #fff;
+        padding-top: 15px;
+        margin-top: 15px;
+        height: auto; 
+    }
+
+    .feature-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid gray;
+    }
+
+    .feature-categories ul {
+        display: flex;
+    }
+    
+    .feature-categories ul li {
+        padding: 0px 5px 0px 5px;
+    }
+
+    /* * DIARY SERIES * */
+    .series {
+        background-color: #fff;
+        padding-top: 15px;
+        margin-top: 15px;
+        height: auto; 
+    }
+    .series-contents {
+        display: flex;
+        justify-content: space-between;
+    }
+    .series-contents .product-box .box-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .series-contents .product-box .box-content .product-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* * AUTHOR - TYPICAL WORKS * */
+    .typical {
+        background-color: #fff;
+        padding-top: 15px;
+        margin-top: 15px;
+        height: auto; 
+    }
+
+    .typical-contents img {
+        max-width:100%; 
+        height:auto;
+    }
 
 
+/* ======================= [FOOTER] ======================= */
+footer {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+    .footer-logo {
+        margin-bottom: 8px;
+        padding: 10px 15px
+    }
+
+    .footer-static-title {
+        padding-bottom: 0px;
+        padding-left: 10px;
+        border-color: gray;
+        color: black;
+        font-size: 13px;
+    }
+    
+    .footer-static-content ul li {
+        padding: 5px;
+    }
