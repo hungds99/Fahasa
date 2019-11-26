@@ -154,6 +154,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
+        position: relative;
     }
 
     .header-1 .cart-top .cart-icon {
@@ -163,6 +164,20 @@ body {
 
     .header-1 .cart-top .cart-title {
         color: #F7941E;
+    }
+
+    .header-1 .cart-top .cart-content {
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        border: 1px solid tan;
+        right: 52px;
+        top: 43px;
+    }
+
+    .header-1 .cart-top .cart-content .cart-contain {
+        width: 320px;
+        padding: 10px;
     }
 
 
@@ -213,7 +228,10 @@ body {
         padding: 10px;
         background-color: white;
         font-size: 14px;
-        position: relative;
+    }
+
+    .block-content ul li a {
+        padding-left: 5px;
     }
 
     .block-content ul li .dropmenu {
@@ -221,9 +239,18 @@ body {
         width: 940px;
         background-color: #fff;
         top: 0;
+        display: none;
         right: -935px;
         z-index: 10;
         padding: 10px;
+    }
+
+    .block-content ul li .dropmenu ul li {
+        padding: 4px;
+    }
+
+    .block-content ul li .dropmenu ul li a {
+        font-size: 12px;
     }
 
     .block-content ul li a > b {
@@ -237,15 +264,145 @@ body {
         cursor: pointer;
         background-color: whitesmoke;
     }
-/* 
+
     .block-content ul li:hover > .dropmenu {
-        display: none;
-    } */
+        display: block;
+    }
 
 /* ======================= [MAIN-CONTAINER] ======================= */
 .main-container {
     background-color: #F0F0F0;
 }
+
+    /* LOGIN */
+    .youama-ajaxlogin-cover {
+        display: block;
+        background: #261E1E none repeat scroll 0% 0%;
+        opacity: 0.5;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        float: left;
+        position: fixed;
+        z-index: 2000;
+    }
+
+    .youama-login-window {
+        width: 360px !important;
+        z-index: 9998;
+        padding: 5px;
+        background-color: #fff;
+        top: 10%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        width: 50%;
+        min-width: 305px;
+        z-index: 3000;
+        font-size: 13px;
+    }
+
+    .youama-window-outside {
+        position: relative;
+        padding: 10px;
+    }
+
+    .youama-window-outside .close {
+        cursor: pointer;
+        text-align: center;
+        width: 40px;
+        float: right;
+        display: block;
+        color: #636363;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 30px;
+        position: absolute;
+        top: -4px;
+        right: 0px;
+    }
+
+    .youama-window-title h3 {
+        display: inline;
+        margin: 0;
+        color: #3399cc;
+    }
+
+    .youama-window-box .input-fly {
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    .youama-window-box .input-fly label {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .youama-window-box .input-fly input[type="email"], .youama-window-box .input-fly input[type="password"] {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        border: 2px solid #e6e6e6;
+    }
+
+    .button, input {
+        height: 39px;
+        line-height: 1.42857;
+    }
+
+    .youama-window-box .box-contents-button {
+        width: 100%;
+    }
+
+    .youama-window-box .youama-forgot-password {
+        margin-top: 10px;
+    }
+
+    .youama-fhs-fp {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .button, input.button {
+        background-color: #bf9a61;
+        border: 1px solid #bf9a61;
+        cursor: pointer;
+        text-transform: uppercase;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        color: white;
+        font-size: 13px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        font-weight: 600;
+        margin: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .fl {
+        float: left;
+    }
+
+    .fr {
+        float: right;
+    }
+
+    .youama-ac {
+        height: 40px;
+        padding-top: 6px;
+        padding-right: 10px;
+    }
+
+    /* * Banner * */
     .fhs-banner-image-block img {
         max-width: 100%; 
         height: auto;
@@ -284,7 +441,7 @@ body {
     .categories-suggestion > .nav-links li:hover {
         border-bottom: 1px solid #F7941E;
         cursor: pointer;
-        box-sizing: none;
+        box-sizing: border-box;
     }
 
     .product-suggestion-contents {
