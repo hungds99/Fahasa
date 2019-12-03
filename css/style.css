@@ -155,6 +155,11 @@ body {
         align-items: center;
         margin-top: 10px;
         position: relative;
+        cursor: pointer;
+    }
+
+    .header-1 .cart-top:hover > .cart-content {
+        display: block;
     }
 
     .header-1 .cart-top .cart-icon {
@@ -173,6 +178,7 @@ body {
         border: 1px solid tan;
         right: 52px;
         top: 43px;
+        display: none;
     }
 
     .header-1 .cart-top .cart-content .cart-contain {
@@ -276,7 +282,7 @@ body {
 
     /* LOGIN */
     .youama-ajaxlogin-cover {
-        display: block;
+        display: none;
         background: #261E1E none repeat scroll 0% 0%;
         opacity: 0.5;
         left: 0px;
@@ -289,6 +295,7 @@ body {
     }
 
     .youama-login-window {
+        display: none;
         width: 360px !important;
         z-index: 9998;
         padding: 5px;
